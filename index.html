@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Hotel Berlin</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+      
+
+</head>
+<body>
+      <main class="container"><div class="container">
+            <form action="javascript:run()">
+                  <h2>Preis Rechner</h2><br>
+            <div class="form-group">
+                  <label for="ankunft">Ankunft:</label>
+                  <input type="date" name="ankunft" id="ankunft" required><br>
+            </div>
+            <div class="form-group"> 
+                  <label for="abreise">Abreise:</label>
+                  <input type="date" name="abreise" id="abreise" required>
+            </div>
+             <!--<div class="form-group">
+                <label for="nachteNum">Anzahl der Nächte:</label>
+                <input type="number" class="form-control" name="nachteNum" id='nachte' min="1" required>
+              </div>--> 
+              <div class="form-group">
+                  <label for="gasteNum">Anzahl der Gäste:</label>
+                  <input type="number" class="form-control" name="gasteNum" id="gaste" min="1" required>
+            </div>
+            <div class="form-group">
+                  <label for="fruhstuck" class="in">Mit Frühstück?</label>
+                  <input type="checkbox" class="" name="fruhstuck" id="fruhstuck">
+                </div>
+                <h2 id="placeholder"></h2>
+            
+                <button type="reset" class="btn">Reset</button>
+                <button type="submit" class="btn" style="float:right">Sofort Preis rechnen</button>
+               </form>
+              
+          </div></main>
+
+      <script src="index.js"></script>
+</body>
+</html>
